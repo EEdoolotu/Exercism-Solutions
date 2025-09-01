@@ -81,3 +81,12 @@ def update_store_inventory(fulfillment_cart, store_inventory):
                 _, aisle, fridge = store_inventory[item]
                 store_inventory[item] = ["Out of Stock", aisle, fridge]
     return store_inventory
+
+
+
+    def is_armstrong_number(number):
+    digits = str(number)
+    length = len(digits)
+    total = sum(int(d) ** length for d in digits)
+    return number == total
+
